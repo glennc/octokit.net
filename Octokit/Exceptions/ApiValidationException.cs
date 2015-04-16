@@ -9,7 +9,7 @@ namespace Octokit
     /// <summary>
     /// Represents a HTTP 422 - Unprocessable Entity response returned from the API.
     /// </summary>
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
     [Serializable]
 #endif
     [SuppressMessage("Microsoft.Design", "CA1032:ImplementStandardExceptionConstructors",
@@ -58,7 +58,7 @@ namespace Octokit
             get { return ApiErrorMessageSafe ?? "Validation Failed"; }
         }
 
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
         /// <summary>
         /// Constructs an instance of ApiValidationException
         /// </summary>

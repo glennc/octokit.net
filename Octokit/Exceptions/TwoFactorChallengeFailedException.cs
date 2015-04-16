@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 
 namespace Octokit
 {
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
     /// <summary>
     /// Represents a failed 2FA challenge from the API
     /// </summary>
@@ -37,7 +37,7 @@ namespace Octokit
             get { return "The two-factor authentication code supplied is not correct"; }
         }
 
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
         /// <summary>
         /// Constructs an instance of TwoFactorChallengeFailedException
         /// </summary>

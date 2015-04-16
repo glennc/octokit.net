@@ -8,7 +8,7 @@ namespace Octokit
     /// <summary>
     /// Exception thrown when creating a repository, but it already exists on the server.
     /// </summary>
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
     [Serializable]
 #endif
     [SuppressMessage("Microsoft.Design", "CA1032:ImplementStandardExceptionConstructors",
@@ -94,7 +94,7 @@ namespace Octokit
         /// </summary>
         public bool OwnerIsOrganization { get; private set; }
 
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
         /// <summary>
         /// Constructs an instance of RepositoryExistsException.
         /// </summary>

@@ -2,7 +2,7 @@ using System;
 
 namespace Octokit
 {
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
     [Serializable]
 #endif
     public class ApiErrorDetail

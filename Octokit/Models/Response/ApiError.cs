@@ -6,7 +6,7 @@ namespace Octokit
     /// <summary>
     /// Error payload from the API reposnse
     /// </summary>
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
     [Serializable]
 #endif
     public class ApiError

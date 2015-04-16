@@ -15,7 +15,7 @@ namespace Octokit
     /// </para>
     /// <para>See http://developer.github.com/v3/#rate-limiting for more details.</para>
     /// </summary>
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
     [Serializable]
 #endif
     [SuppressMessage("Microsoft.Design", "CA1032:ImplementStandardExceptionConstructors",
@@ -75,7 +75,7 @@ namespace Octokit
             get { return ApiErrorMessageSafe ?? "API Rate Limit exceeded"; }
         }
 
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
         /// <summary>
         /// Constructs an instance of RateLimitExceededException
         /// </summary>

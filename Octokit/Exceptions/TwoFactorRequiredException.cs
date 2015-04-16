@@ -9,7 +9,7 @@ namespace Octokit
     /// <summary>
     /// 
     /// </summary>
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
     [Serializable]
 #endif
     [SuppressMessage("Microsoft.Design", "CA1032:ImplementStandardExceptionConstructors",
@@ -51,7 +51,7 @@ namespace Octokit
             get { return ApiErrorMessageSafe ?? "Two-factor authentication code is required"; }
         }
 
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
         /// <summary>
         /// Constructs an instance of TwoFactorRequiredException.
         /// </summary>

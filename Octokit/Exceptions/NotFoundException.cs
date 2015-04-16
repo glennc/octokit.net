@@ -9,7 +9,7 @@ namespace Octokit
     /// <summary>
     /// Represents a HTTP 404 - Not Found response returned from the API.
     /// </summary>
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
     [Serializable]
 #endif
     [SuppressMessage("Microsoft.Design", "CA1032:ImplementStandardExceptionConstructors",
@@ -45,7 +45,7 @@ namespace Octokit
                 "NotFoundException created with wrong status code");
         }
 
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
         /// <summary>
         /// Constructs an instance of NotFoundException
         /// </summary>

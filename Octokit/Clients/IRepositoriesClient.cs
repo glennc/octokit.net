@@ -1,7 +1,5 @@
 using System;
-#if NET_45
 using System.Collections.Generic;
-#endif
 using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 

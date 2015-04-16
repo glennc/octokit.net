@@ -9,7 +9,7 @@ namespace Octokit
     /// <summary>
     /// Represents errors that occur from the GitHub API.
     /// </summary>
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
     [Serializable]
 #endif
     [SuppressMessage("Microsoft.Design", "CA1032:ImplementStandardExceptionConstructors",
@@ -135,7 +135,7 @@ namespace Octokit
             return new ApiError(responseContent);
         }
 
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
         /// <summary>
         /// Constructs an instance of ApiException.
         /// </summary>

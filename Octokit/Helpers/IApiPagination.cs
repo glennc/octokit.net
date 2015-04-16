@@ -1,8 +1,6 @@
 ﻿using System;
-#if NET_45
-using System.Collections.Generic;
-#endif
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace Octokit
 {

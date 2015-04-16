@@ -9,7 +9,7 @@ namespace Octokit
     /// <summary>
     /// Represents a HTTP 403 - Forbidden response returned from the API.
     /// </summary>
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
     [Serializable]
 #endif
     [SuppressMessage("Microsoft.Design", "CA1032:ImplementStandardExceptionConstructors",
@@ -41,7 +41,7 @@ namespace Octokit
             get { return ApiErrorMessageSafe ?? "Request Forbidden"; }
         }
     
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
         /// <summary>
         /// Constructs an instance of ForbiddenException
         /// </summary>

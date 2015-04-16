@@ -8,7 +8,7 @@ namespace Octokit
     /// Exception thrown when creating a private repository, but the user's private quota is or would be exceeded
     /// by creating it.
     /// </summary>
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
     [Serializable]
 #endif
     [SuppressMessage("Microsoft.Design", "CA1032:ImplementStandardExceptionConstructors",
@@ -34,7 +34,7 @@ namespace Octokit
             }
         }
 
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
         /// <summary>
         /// Constructs an instance of PrivateRepositoryQuotaExceededException
         /// </summary>

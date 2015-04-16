@@ -5,11 +5,11 @@ using Octokit.Helpers;
 
 namespace Octokit
 {
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
     [Serializable]
 #endif
     public class RateLimit
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
         : ISerializable
 #endif
     {
@@ -47,7 +47,7 @@ namespace Octokit
                 : result;
         }
 
-#if !NETFX_CORE
+#if !NETFX_CORE && !ASPNETCORE50
         protected RateLimit(SerializationInfo info, StreamingContext context)
         {
             Ensure.ArgumentNotNull(info, "info");

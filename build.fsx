@@ -63,7 +63,7 @@ Target "FixProjects" (fun _ ->
 )
 
 Target "BuildApp" (fun _ ->
-    MSBuild null "Build" ["Configuration", buildMode] ["./Octokit.sln"]
+    MSBuild null "Build" [("Configuration", buildMode); ("WarningLevel", "0")] ["./Octokit.sln"]
     |> Log "AppBuild-Output: "
 )
 
@@ -186,8 +186,7 @@ Target "CreatePackages" DoNothing
 "IntegrationTests"
    ==> "Default"
 
-"SourceLink"
-   ==> "CreatePackages"
+
 "CreateOctokitPackage"
    ==> "CreatePackages"
 "CreateOctokitReactivePackage"

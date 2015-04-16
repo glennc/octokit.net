@@ -507,7 +507,8 @@ namespace Octokit
             return string.Format(CultureInfo.InvariantCulture,
                 "{0} ({1} {2}; {3}; {4}; Octokit {5})",
                 productInformation,
-#if NETFX_CORE
+#if NETFX_CORE || ASPNETCORE50
+                //TODO: this is now wrong....
                 // Microsoft doesn't want you changing your Windows Store Application based on the processor or
                 // Windows version. If we really wanted this information, we could do a best guess based on
                 // this approach: http://attackpattern.com/2013/03/device-information-in-windows-8-store-apps/

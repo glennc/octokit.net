@@ -1,0 +1,108 @@
+{
+    "version": "1.0.0",
+    "frameworks": {
+        "net45": {
+            "frameworkAssemblies": {
+                "System.Net.Http": ""
+            }
+        },
+        "aspnet50": {
+            "frameworkAssemblies": {
+                "System.Net.Http": ""
+            }
+        },
+        "aspnetcore50": {
+            "dependencies": {
+                "System.Net.Http": "4.0.0-beta-*",
+                "System.Collections": "4.0.10-beta-*",
+                "System.Diagnostics.Debug": "4.0.10-beta-*",
+                "System.Globalization": "4.0.10-beta-*",
+                "System.Runtime.Extensions": "4.0.10-beta-*",
+                "System.Diagnostics.Tools": "4.0.0-beta-*",
+                "System.Runtime": "4.0.20-beta-*",
+                "System.Linq": "4.0.0-beta-*",
+                "System.Reflection.TypeExtensions": "4.0.0-beta-*",
+                "System.Reflection.Extensions": "4.0.0-beta-*",
+                "System.Text.RegularExpressions": "4.0.10-beta-*",
+                "System.Reflection": "4.0.10-beta-*",
+                "System.ObjectModel": "4.0.10-beta-*",
+                "System.IO": "4.0.10-beta-*",
+                "System.Linq.Expressions": "4.0.0-beta-*",
+                "System.Collections.Concurrent": "4.0.10-beta-*",
+                "System.Runtime.Serialization.Primitives": "4.0.0-beta-*"
+            }
+        },
+        "netcore45": {
+            "compilationOptions": {
+                "define": [ "CODE_ANALYSIS", "CODE_ANALYSIS", "NETFX_CORE", "SIMPLE_JSON_OBJARRAYINTERNAL", "SIMPLE_JSON_INTERNAL", "NET_45", "SIMPLE_JSON_READONLY_COLLECTIONS" ]
+            },
+            "frameworkAssemblies": {
+                "System.Runtime": "",
+                "System.ComponentModel": "",
+                "System.Net.Http": "",
+                "System.Collections": "",
+                "System.Linq": "",
+                "System.Threading.Tasks": "",
+                "System.Globalization": "",
+                "System.Net.Primitives": "",
+                "System.Diagnostics.Debug": "",
+                "System.Runtime.Extensions": "",
+                "System.Text.Encoding": "",
+                "System.Collections.Concurrent": "",
+                "System.ObjectModel": "",
+                "System.IO": "",
+                "System.Linq.Expressions": "",
+                "System.Runtime.Serialization.Primitives": "",
+                "System.Reflection": "",
+                "System.Reflection.Extensions": "",
+                "System.Diagnostics.Tools": "",
+                "System.Text.RegularExpressions": ""
+            }
+        },
+        ".NETPortable,Version=v4.5,Profile=Profile259": {
+            "compilationOptions": {
+                "define": [ "CODE_ANALYSIS", "NETFX_CORE", "SIMPLE_JSON_OBJARRAYINTERNAL", "SIMPLE_JSON_INTERNAL", "NET_45", "PORTABLE", "SIMPLE_JSON_READONLY_COLLECTIONS" ]
+            },
+            "dependencies": {
+                "System.Net.Http": "4.0.0-beta-*"
+            },
+            "frameworkAssemblies": {
+                "Microsoft.CSharp": "",
+                "System": "",
+                "System.Collections": "",
+                "System.ComponentModel": "",
+                "System.ComponentModel.EventBasedAsync": "",
+                "System.Core": "",
+                "System.Diagnostics.Debug": "",
+                "System.Diagnostics.Tools": "",
+                "System.Dynamic.Runtime": "",
+                "System.Globalization": "",
+                "System.IO": "",
+                "System.Linq": "",
+                "System.Linq.Expressions": "",
+                "System.Linq.Queryable": "",
+                "System.Net.NetworkInformation": "",
+                "System.Net.Primitives": "",
+                "System.Net.Requests": "",
+                "System.ObjectModel": "",
+                "System.Reflection": "",
+                "System.Reflection.Extensions": "",
+                "System.Reflection.Primitives": "",
+                "System.Resources.ResourceManager": "",
+                "System.Runtime": "",
+                "System.Runtime.Extensions": "",
+                "System.Runtime.InteropServices.WindowsRuntime": "",
+                "System.Runtime.Serialization": "",
+                "System.Runtime.Serialization.Json": "",
+                "System.Runtime.Serialization.Primitives": "",
+                "System.Security.Principal": "",
+                "System.ServiceModel.Web": "",
+                "System.Text.Encoding": "",
+                "System.Text.Encoding.Extensions": "",
+                "System.Text.RegularExpressions": "",
+                "System.Threading": "",
+                "System.Threading.Tasks": ""
+            }
+        }
+    }
+}
